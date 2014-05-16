@@ -5,6 +5,7 @@
 
 A [log.io](http://logio.org/) logger for [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack).
 
+![screenshot](https://raw.githubusercontent.com/s4nchez/LogIO-CocoaLumberjack/master/screenshot.png)
 
 ## Installation
 
