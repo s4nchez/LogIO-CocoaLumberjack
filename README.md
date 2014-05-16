@@ -3,24 +3,33 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/LogIO-CocoaLumberjack/badge.png)](http://cocoadocs.org/docsets/LogIO-CocoaLumberjack)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/LogIO-CocoaLumberjack/badge.png)](http://cocoadocs.org/docsets/LogIO-CocoaLumberjack)
 
-## Usage
+A [log.io](http://logio.org/) logger for [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack).
 
-To run the example project; clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
-LogIO-CocoaLumberjack is available through [CocoaPods](http://cocoapods.org), to install
-it simply add the following line to your Podfile:
+### Using cocoapods
+
+Add the following line to your Podfile:
 
     pod "LogIO-CocoaLumberjack"
 
-## Author
+### Manual installation
 
-Ivan Sanchez, s4nchez@gmail.com
+Simply clone this repository and add the files from the *Classes* directory to your project.
 
-## License
+## Usage
 
-LogIO-CocoaLumberjack is available under the MIT license. See the LICENSE file for more info.
+Just add the logger to CocoaLumberjack:
 
+``` objective-c
+[DDLog addLogger:[LogIOLogger sharedInstance]];
+```
+
+Then, configure your node and stream:
+
+``` objective-c 
+NSString *deviceName = [[UIDevice currentDevice] name];
+NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+[LogIOLogger configureNode:deviceName stream:appName];
+```

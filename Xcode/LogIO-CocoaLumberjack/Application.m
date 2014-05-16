@@ -16,7 +16,9 @@ int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [DDLog addLogger:[LogIOLogger sharedInstance]];
-    [LogIOLogger configureNode:[[UIDevice currentDevice] name] stream:@"app_log"];
+    NSString *deviceName = [[UIDevice currentDevice] name];
+    NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+    [LogIOLogger configureNode:deviceName stream:appName];
     [LogIOLogger connectTo:@"localhost" port:28777];
 
     DDLogInfo(@"Application started.");
