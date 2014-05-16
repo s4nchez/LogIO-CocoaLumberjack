@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "LogIO-CocoaLumberjack"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A log.io appender for CocoaLumberjack."
   s.description      = <<-DESC
                         A [log.io](http://logio.org/) appender for [CocoaLumberjack](https://github.com/CocoaLumberjack/)
