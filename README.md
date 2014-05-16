@@ -27,10 +27,11 @@ Just add the logger to CocoaLumberjack:
 [DDLog addLogger:[LogIOLogger sharedInstance]];
 ```
 
-Then, configure your node and stream:
+Then, configure your node, stream and destination server:
 
 ``` objective-c 
 NSString *deviceName = [[UIDevice currentDevice] name];
 NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
 [LogIOLogger configureNode:deviceName stream:appName];
+[LogIOLogger connectTo:@"localhost" port:28777];
 ```
