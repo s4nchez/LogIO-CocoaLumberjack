@@ -1,0 +1,3 @@
+platform :ios, '7.1'
+pod 'CocoaLumberjack', '~> 1.8.1'
+pod 'CocoaAsyncSocket', '~> 7.3'
