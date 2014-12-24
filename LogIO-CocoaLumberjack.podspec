@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Classes/**/*.h'
   #s.frameworks = 'SomeFramework', 'AnotherFramework'
   s.dependency 'CocoaAsyncSocket', '~> 7.3'
-  s.dependency 'CocoaLumberjack', '~> 1.8.1'
+  s.dependency 'CocoaLumberjack', '~> 1.9.2'
 
 end
