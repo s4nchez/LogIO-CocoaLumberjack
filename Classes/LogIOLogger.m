@@ -94,11 +94,11 @@ static NSString *const LOG_FORMAT = @"+log|%@|%@|%d|%@\r\n";
 
     NSLog(@"Logging %@", logMessage);
 
-    NSString *logMsg = logMessage->logMsg;
-    int logLevel = logMessage->logLevel;
+    NSString *logMsg = logMessage.message;
+    int logLevel = logMessage.level;
 
-    if (self->formatter)
-        logMsg = [self->formatter formatLogMessage:logMessage];
+    if (self.logFormatter)
+        logMsg = [self.logFormatter formatLogMessage:logMessage];
 
     if (logMsg) {
         [self sendMessage:[NSString stringWithFormat:LOG_FORMAT, self.streamName, self.nodeName, logLevel, logMsg]];

@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
   s.osx.exclude_files = 'Classes/ios'
   
   s.dependency 'CocoaAsyncSocket', '~> 7.4'
-  s.dependency 'CocoaLumberjack', '~> 1.9.2'
+  s.dependency 'CocoaLumberjack', '~> 2.0'
 
 end
