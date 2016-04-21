@@ -2,6 +2,7 @@
 
 [![Version](http://cocoapod-badges.herokuapp.com/v/LogIO-CocoaLumberjack/badge.png)](http://cocoadocs.org/docsets/LogIO-CocoaLumberjack)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/LogIO-CocoaLumberjack/badge.png)](http://cocoadocs.org/docsets/LogIO-CocoaLumberjack)
+[![Build Status](https://travis-ci.org/s4nchez/LogIO-CocoaLumberjack.svg?branch=master)](https://travis-ci.org/s4nchez/LogIO-CocoaLumberjack)
 
 A [log.io](http://logio.org/) logger for [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack).
 
