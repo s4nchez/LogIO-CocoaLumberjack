@@ -1,6 +1,6 @@
 language: objective-c
 before_install:
-- gem install cocoapods
+- gem install cocoapods -v 0.39.0 --no-ri --no-rdoc
 - pod install
 script:
 - pod lib lint
