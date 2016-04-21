@@ -1,505 +1,1136 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		0C478275041641C5A9BC14C8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F635611F53F24A01A29F7A69 /* libPods.a */; };
-		A8AC712B7F1065ACBE52B4A0 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7CD4B6D853A3B0A23D3E /* Application.m */; };
-		A8AC718032227DE622EC2A5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AC752F11E134702C45B00C /* UIKit.framework */; };
-		A8AC72F8A42D5CAF381B2663 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AC752F11E134702C45B00C /* UIKit.framework */; };
-		A8AC744FEA3A92B2F1688C87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AC77E2F2ABAE21BEF368B6 /* Images.xcassets */; };
-		A8AC7650D751C7DA8D5E6E14 /* LogIOLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AC77203A86E43D265BCD56 /* LogIOLogger.m */; };
-		A8AC773B50DA1F09FCBA38A6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7FB336D2BD6A7CF688EB /* MainViewController.m */; };
-		A8AC7A98B1475282F951FC59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AC79EE5A85BA473545DD2E /* Foundation.framework */; };
-		A8AC7D6AEADD14F0BB60FFA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8AC793A9BA4878DA4B13479 /* InfoPlist.strings */; };
-		A8AC7DD5E330B6D2E163C32C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AC7A2EDE61C0A8CE692D8D /* CoreGraphics.framework */; };
-		A8AC7DE7C1715A3F1B78AB6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7D1622888E51F7049C77 /* main.m */; };
-		A8AC7F70AA7ABCB3E447A48F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AC79EE5A85BA473545DD2E /* Foundation.framework */; };
-		A8AC7F882424048E6445962A /* LogIO_CocoaLumberjackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7BCA4618F9D13392241E /* LogIO_CocoaLumberjackTests.m */; };
-		A8AC7FB22562F0EBC17ADAB1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AC789A2D70AB103EAB865B /* XCTest.framework */; };
-		A8AC7FF34BC4A4974CCCE5E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8AC78133814131C97B50892 /* InfoPlist.strings */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A8AC708B2CF747A75CF1687F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8AC73DFA58AA243205646D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8AC7E9BACBFD5D7EF1DC02A;
-			remoteInfo = "LogIO-CocoaLumberjack";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		A8AC70FE965EE24DA3C629DC /* LogIO-CocoaLumberjackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LogIO-CocoaLumberjackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8AC7228C9135553753BCC41 /* LogIOLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogIOLogger.h; path = ../../Classes/LogIOLogger.h; sourceTree = "<group>"; };
-		A8AC72FA50B522DFD0B9D767 /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
-		A8AC7307202D1C429E75ED83 /* LogIO-CocoaLumberjack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogIO-CocoaLumberjack-Prefix.pch"; sourceTree = "<group>"; };
-		A8AC751D23FF42B6F97B87CC /* LogIO-CocoaLumberjackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "LogIO-CocoaLumberjackTests-Info.plist"; sourceTree = "<group>"; };
-		A8AC752F11E134702C45B00C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A8AC77203A86E43D265BCD56 /* LogIOLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogIOLogger.m; path = ../../Classes/LogIOLogger.m; sourceTree = "<group>"; };
-		A8AC77E2F2ABAE21BEF368B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A8AC789A2D70AB103EAB865B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A8AC79EE5A85BA473545DD2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A8AC7A2EDE61C0A8CE692D8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A8AC7A6ED2389C8882EFDE7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A8AC7B796ABE4D012C87EAF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A8AC7BCA4618F9D13392241E /* LogIO_CocoaLumberjackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogIO_CocoaLumberjackTests.m; sourceTree = "<group>"; };
-		A8AC7CD4B6D853A3B0A23D3E /* Application.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
-		A8AC7D058C5C9AA28E4ABCFD /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		A8AC7D1622888E51F7049C77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A8AC7E5C2CA8D17826817317 /* LogIO-CocoaLumberjack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogIO-CocoaLumberjack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8AC7F90683F3003CAF05D96 /* LogIO-CocoaLumberjack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "LogIO-CocoaLumberjack-Info.plist"; sourceTree = "<group>"; };
-		A8AC7FB336D2BD6A7CF688EB /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		E7D3CD374C624F979BB07949 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		F635611F53F24A01A29F7A69 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		A8AC76A03F97E60657F5C0D4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8AC7F70AA7ABCB3E447A48F /* Foundation.framework in Frameworks */,
-				A8AC7DD5E330B6D2E163C32C /* CoreGraphics.framework in Frameworks */,
-				A8AC718032227DE622EC2A5D /* UIKit.framework in Frameworks */,
-				0C478275041641C5A9BC14C8 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8AC7E5F946BD7CDD6AFCC3A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8AC7FB22562F0EBC17ADAB1 /* XCTest.framework in Frameworks */,
-				A8AC7A98B1475282F951FC59 /* Foundation.framework in Frameworks */,
-				A8AC72F8A42D5CAF381B2663 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		A8AC705854568AB2E7DB4C63 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A8AC7F90683F3003CAF05D96 /* LogIO-CocoaLumberjack-Info.plist */,
-				A8AC78133814131C97B50892 /* InfoPlist.strings */,
-				A8AC7D1622888E51F7049C77 /* main.m */,
-				A8AC7307202D1C429E75ED83 /* LogIO-CocoaLumberjack-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A8AC750BD89B310FBFA116FD /* LogIO-CocoaLumberjack */ = {
-			isa = PBXGroup;
-			children = (
-				A8AC705854568AB2E7DB4C63 /* Supporting Files */,
-				A8AC72FA50B522DFD0B9D767 /* Application.h */,
-				A8AC7CD4B6D853A3B0A23D3E /* Application.m */,
-				A8AC77E2F2ABAE21BEF368B6 /* Images.xcassets */,
-				A8AC7D058C5C9AA28E4ABCFD /* MainViewController.h */,
-				A8AC7FB336D2BD6A7CF688EB /* MainViewController.m */,
-				A8AC7A3B60686FDCA1BEB691 /* Classes */,
-			);
-			path = "LogIO-CocoaLumberjack";
-			sourceTree = "<group>";
-		};
-		A8AC7563404CC9ADADA248EE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A8AC79EE5A85BA473545DD2E /* Foundation.framework */,
-				A8AC7A2EDE61C0A8CE692D8D /* CoreGraphics.framework */,
-				A8AC752F11E134702C45B00C /* UIKit.framework */,
-				A8AC789A2D70AB103EAB865B /* XCTest.framework */,
-				F635611F53F24A01A29F7A69 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A8AC7800D15D6460256005D5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A8AC7E5C2CA8D17826817317 /* LogIO-CocoaLumberjack.app */,
-				A8AC70FE965EE24DA3C629DC /* LogIO-CocoaLumberjackTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A8AC7A3B60686FDCA1BEB691 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A8AC7228C9135553753BCC41 /* LogIOLogger.h */,
-				A8AC77203A86E43D265BCD56 /* LogIOLogger.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		A8AC7A43E3B3B39D6D31DFAF /* LogIO-CocoaLumberjackTests */ = {
-			isa = PBXGroup;
-			children = (
-				A8AC7D9A242579D884532DBE /* Supporting Files */,
-				A8AC7BCA4618F9D13392241E /* LogIO_CocoaLumberjackTests.m */,
-			);
-			path = "LogIO-CocoaLumberjackTests";
-			sourceTree = "<group>";
-		};
-		A8AC7BCE9A3F415F51E9E27D = {
-			isa = PBXGroup;
-			children = (
-				A8AC7800D15D6460256005D5 /* Products */,
-				A8AC7563404CC9ADADA248EE /* Frameworks */,
-				A8AC750BD89B310FBFA116FD /* LogIO-CocoaLumberjack */,
-				A8AC7A43E3B3B39D6D31DFAF /* LogIO-CocoaLumberjackTests */,
-				E7D3CD374C624F979BB07949 /* Pods.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		A8AC7D9A242579D884532DBE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A8AC751D23FF42B6F97B87CC /* LogIO-CocoaLumberjackTests-Info.plist */,
-				A8AC793A9BA4878DA4B13479 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		A8AC70E3DF3B0BA58972B68F /* LogIO-CocoaLumberjackTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8AC705484BCA6393BCCFDE6 /* Build configuration list for PBXNativeTarget "LogIO-CocoaLumberjackTests" */;
-			buildPhases = (
-				A8AC7B9A82C82E902785BC82 /* Sources */,
-				A8AC7E5F946BD7CDD6AFCC3A /* Frameworks */,
-				A8AC77A9F60773562A25D0FB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8AC723A9D68FEEFF4130533 /* PBXTargetDependency */,
-			);
-			name = "LogIO-CocoaLumberjackTests";
-			productName = "LogIO-CocoaLumberjackTests";
-			productReference = A8AC70FE965EE24DA3C629DC /* LogIO-CocoaLumberjackTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A8AC7E9BACBFD5D7EF1DC02A /* LogIO-CocoaLumberjack */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8AC7A555BC23E14B4291252 /* Build configuration list for PBXNativeTarget "LogIO-CocoaLumberjack" */;
-			buildPhases = (
-				139520650A0B44889C4E1905 /* Check Pods Manifest.lock */,
-				A8AC79EC065AEB2A22464F8F /* Sources */,
-				A8AC76A03F97E60657F5C0D4 /* Frameworks */,
-				A8AC79E295C92D43FFF2FF19 /* Resources */,
-				197EA63CE84F4663B4CB02CE /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "LogIO-CocoaLumberjack";
-			productName = "LogIO-CocoaLumberjack";
-			productReference = A8AC7E5C2CA8D17826817317 /* LogIO-CocoaLumberjack.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		A8AC73DFA58AA243205646D6 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				ORGANIZATIONNAME = "___FULLUSERNAME___";
-			};
-			buildConfigurationList = A8AC7DBA05154994A98679C9 /* Build configuration list for PBXProject "LogIO-CocoaLumberjack" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = A8AC7BCE9A3F415F51E9E27D;
-			productRefGroup = A8AC7800D15D6460256005D5 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				A8AC7E9BACBFD5D7EF1DC02A /* LogIO-CocoaLumberjack */,
-				A8AC70E3DF3B0BA58972B68F /* LogIO-CocoaLumberjackTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		A8AC77A9F60773562A25D0FB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8AC7D6AEADD14F0BB60FFA3 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8AC79E295C92D43FFF2FF19 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8AC7FF34BC4A4974CCCE5E1 /* InfoPlist.strings in Resources */,
-				A8AC744FEA3A92B2F1688C87 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		139520650A0B44889C4E1905 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		197EA63CE84F4663B4CB02CE /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		A8AC79EC065AEB2A22464F8F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8AC7DE7C1715A3F1B78AB6E /* main.m in Sources */,
-				A8AC712B7F1065ACBE52B4A0 /* Application.m in Sources */,
-				A8AC773B50DA1F09FCBA38A6 /* MainViewController.m in Sources */,
-				A8AC7650D751C7DA8D5E6E14 /* LogIOLogger.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8AC7B9A82C82E902785BC82 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8AC7F882424048E6445962A /* LogIO_CocoaLumberjackTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A8AC723A9D68FEEFF4130533 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8AC7E9BACBFD5D7EF1DC02A /* LogIO-CocoaLumberjack */;
-			targetProxy = A8AC708B2CF747A75CF1687F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A8AC78133814131C97B50892 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8AC7B796ABE4D012C87EAF7 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A8AC793A9BA4878DA4B13479 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8AC7A6ED2389C8882EFDE7E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		A8AC74600BFC5B9E9510DC7D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Prefix.pch";
-				INFOPLIST_FILE = "LogIO-CocoaLumberjackTests/LogIO-CocoaLumberjackTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-		A8AC773899C99D7B83B3676E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7D3CD374C624F979BB07949 /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Prefix.pch";
-				INFOPLIST_FILE = "LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		A8AC777E71E872439D690093 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A8AC7B487FE2A56AA81D5697 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Prefix.pch";
-				INFOPLIST_FILE = "LogIO-CocoaLumberjackTests/LogIO-CocoaLumberjackTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		A8AC7C44C299A94CBB52C48A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7D3CD374C624F979BB07949 /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Prefix.pch";
-				INFOPLIST_FILE = "LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		A8AC7C493EBB0CEDEF0BC82E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		A8AC705484BCA6393BCCFDE6 /* Build configuration list for PBXNativeTarget "LogIO-CocoaLumberjackTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8AC74600BFC5B9E9510DC7D /* Release */,
-				A8AC7B487FE2A56AA81D5697 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A8AC7A555BC23E14B4291252 /* Build configuration list for PBXNativeTarget "LogIO-CocoaLumberjack" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8AC7C44C299A94CBB52C48A /* Release */,
-				A8AC773899C99D7B83B3676E /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A8AC7DBA05154994A98679C9 /* Build configuration list for PBXProject "LogIO-CocoaLumberjack" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8AC7C493EBB0CEDEF0BC82E /* Release */,
-				A8AC777E71E872439D690093 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = A8AC73DFA58AA243205646D6 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0C478275041641C5A9BC14C8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F635611F53F24A01A29F7A69</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>139520650A0B44889C4E1905</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>197EA63CE84F4663B4CB02CE</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>8689EF1FC8E899410CE65C9A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>87656E2FF3B6343B099C0A99</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE690F6B7269C214B2502D97</string>
+				<string>8D9AB703BA0126787E7BEA4B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D9AB703BA0126787E7BEA4B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC705484BCA6393BCCFDE6</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>A8AC74600BFC5B9E9510DC7D</string>
+				<string>A8AC7B487FE2A56AA81D5697</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>A8AC705854568AB2E7DB4C63</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A8AC7F90683F3003CAF05D96</string>
+				<string>A8AC78133814131C97B50892</string>
+				<string>A8AC7D1622888E51F7049C77</string>
+				<string>A8AC7307202D1C429E75ED83</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC708B2CF747A75CF1687F</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>A8AC73DFA58AA243205646D6</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>A8AC7E9BACBFD5D7EF1DC02A</string>
+			<key>remoteInfo</key>
+			<string>LogIO-CocoaLumberjack</string>
+		</dict>
+		<key>A8AC70E3DF3B0BA58972B68F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>A8AC705484BCA6393BCCFDE6</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A8AC7B9A82C82E902785BC82</string>
+				<string>A8AC7E5F946BD7CDD6AFCC3A</string>
+				<string>A8AC77A9F60773562A25D0FB</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>A8AC723A9D68FEEFF4130533</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>LogIO-CocoaLumberjackTests</string>
+			<key>productName</key>
+			<string>LogIO-CocoaLumberjackTests</string>
+			<key>productReference</key>
+			<string>A8AC70FE965EE24DA3C629DC</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>A8AC70FE965EE24DA3C629DC</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>LogIO-CocoaLumberjackTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A8AC712B7F1065ACBE52B4A0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC7CD4B6D853A3B0A23D3E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC718032227DE622EC2A5D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC752F11E134702C45B00C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC7228C9135553753BCC41</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>LogIOLogger.h</string>
+			<key>path</key>
+			<string>../../Classes/LogIOLogger.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC723A9D68FEEFF4130533</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>A8AC7E9BACBFD5D7EF1DC02A</string>
+			<key>targetProxy</key>
+			<string>A8AC708B2CF747A75CF1687F</string>
+		</dict>
+		<key>A8AC72F8A42D5CAF381B2663</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC752F11E134702C45B00C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC72FA50B522DFD0B9D767</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Application.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7307202D1C429E75ED83</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LogIO-CocoaLumberjack-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC73DFA58AA243205646D6</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>ORGANIZATIONNAME</key>
+				<string>___FULLUSERNAME___</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>A8AC7DBA05154994A98679C9</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>A8AC7BCE9A3F415F51E9E27D</string>
+			<key>productRefGroup</key>
+			<string>A8AC7800D15D6460256005D5</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>A8AC7E9BACBFD5D7EF1DC02A</string>
+				<string>A8AC70E3DF3B0BA58972B68F</string>
+			</array>
+		</dict>
+		<key>A8AC744FEA3A92B2F1688C87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC77E2F2ABAE21BEF368B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC74600BFC5B9E9510DC7D</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LogIO-CocoaLumberjackTests/LogIO-CocoaLumberjackTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>A8AC750BD89B310FBFA116FD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A8AC705854568AB2E7DB4C63</string>
+				<string>A8AC72FA50B522DFD0B9D767</string>
+				<string>A8AC7CD4B6D853A3B0A23D3E</string>
+				<string>A8AC77E2F2ABAE21BEF368B6</string>
+				<string>A8AC7D058C5C9AA28E4ABCFD</string>
+				<string>A8AC7FB336D2BD6A7CF688EB</string>
+				<string>A8AC7A3B60686FDCA1BEB691</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>LogIO-CocoaLumberjack</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC751D23FF42B6F97B87CC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.info</string>
+			<key>path</key>
+			<string>LogIO-CocoaLumberjackTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC752F11E134702C45B00C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>A8AC7563404CC9ADADA248EE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A8AC79EE5A85BA473545DD2E</string>
+				<string>A8AC7A2EDE61C0A8CE692D8D</string>
+				<string>A8AC752F11E134702C45B00C</string>
+				<string>A8AC789A2D70AB103EAB865B</string>
+				<string>F635611F53F24A01A29F7A69</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7650D751C7DA8D5E6E14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC77203A86E43D265BCD56</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC76A03F97E60657F5C0D4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A8AC7F70AA7ABCB3E447A48F</string>
+				<string>A8AC7DD5E330B6D2E163C32C</string>
+				<string>A8AC718032227DE622EC2A5D</string>
+				<string>0C478275041641C5A9BC14C8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A8AC77203A86E43D265BCD56</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>LogIOLogger.m</string>
+			<key>path</key>
+			<string>../../Classes/LogIOLogger.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC773899C99D7B83B3676E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8D9AB703BA0126787E7BEA4B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>USER_HEADER_SEARCH_PATHS</key>
+				<string>"${PROJECT_DIR}/Pods"/**</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>A8AC773B50DA1F09FCBA38A6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC7FB336D2BD6A7CF688EB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC777E71E872439D690093</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>A8AC77A9F60773562A25D0FB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A8AC7D6AEADD14F0BB60FFA3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A8AC77E2F2ABAE21BEF368B6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7800D15D6460256005D5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A8AC7E5C2CA8D17826817317</string>
+				<string>A8AC70FE965EE24DA3C629DC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC78133814131C97B50892</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A8AC7B796ABE4D012C87EAF7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC789A2D70AB103EAB865B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>A8AC793A9BA4878DA4B13479</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A8AC7A6ED2389C8882EFDE7E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC79E295C92D43FFF2FF19</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A8AC7FF34BC4A4974CCCE5E1</string>
+				<string>A8AC744FEA3A92B2F1688C87</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A8AC79EC065AEB2A22464F8F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A8AC7DE7C1715A3F1B78AB6E</string>
+				<string>A8AC712B7F1065ACBE52B4A0</string>
+				<string>A8AC773B50DA1F09FCBA38A6</string>
+				<string>A8AC7650D751C7DA8D5E6E14</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A8AC79EE5A85BA473545DD2E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>A8AC7A2EDE61C0A8CE692D8D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>A8AC7A3B60686FDCA1BEB691</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A8AC7228C9135553753BCC41</string>
+				<string>A8AC77203A86E43D265BCD56</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7A43E3B3B39D6D31DFAF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A8AC7D9A242579D884532DBE</string>
+				<string>A8AC7BCA4618F9D13392241E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>LogIO-CocoaLumberjackTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7A555BC23E14B4291252</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>A8AC7C44C299A94CBB52C48A</string>
+				<string>A8AC773899C99D7B83B3676E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>A8AC7A6ED2389C8882EFDE7E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7A98B1475282F951FC59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC79EE5A85BA473545DD2E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC7B487FE2A56AA81D5697</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LogIO-CocoaLumberjackTests/LogIO-CocoaLumberjackTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>A8AC7B796ABE4D012C87EAF7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7B9A82C82E902785BC82</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A8AC7F882424048E6445962A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A8AC7BCA4618F9D13392241E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LogIO_CocoaLumberjackTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7BCE9A3F415F51E9E27D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A8AC7800D15D6460256005D5</string>
+				<string>A8AC7563404CC9ADADA248EE</string>
+				<string>A8AC750BD89B310FBFA116FD</string>
+				<string>A8AC7A43E3B3B39D6D31DFAF</string>
+				<string>87656E2FF3B6343B099C0A99</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7C44C299A94CBB52C48A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>CE690F6B7269C214B2502D97</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LogIO-CocoaLumberjack/LogIO-CocoaLumberjack-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>USER_HEADER_SEARCH_PATHS</key>
+				<string>"${PROJECT_DIR}/Pods"/**</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>A8AC7C493EBB0CEDEF0BC82E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>A8AC7CD4B6D853A3B0A23D3E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Application.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7D058C5C9AA28E4ABCFD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MainViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7D1622888E51F7049C77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7D6AEADD14F0BB60FFA3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC793A9BA4878DA4B13479</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC7D9A242579D884532DBE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A8AC751D23FF42B6F97B87CC</string>
+				<string>A8AC793A9BA4878DA4B13479</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7DBA05154994A98679C9</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>A8AC7C493EBB0CEDEF0BC82E</string>
+				<string>A8AC777E71E872439D690093</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>A8AC7DD5E330B6D2E163C32C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC7A2EDE61C0A8CE692D8D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC7DE7C1715A3F1B78AB6E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC7D1622888E51F7049C77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC7E5C2CA8D17826817317</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>LogIO-CocoaLumberjack.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A8AC7E5F946BD7CDD6AFCC3A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A8AC7FB22562F0EBC17ADAB1</string>
+				<string>A8AC7A98B1475282F951FC59</string>
+				<string>A8AC72F8A42D5CAF381B2663</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A8AC7E9BACBFD5D7EF1DC02A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>A8AC7A555BC23E14B4291252</string>
+			<key>buildPhases</key>
+			<array>
+				<string>139520650A0B44889C4E1905</string>
+				<string>A8AC79EC065AEB2A22464F8F</string>
+				<string>A8AC76A03F97E60657F5C0D4</string>
+				<string>A8AC79E295C92D43FFF2FF19</string>
+				<string>197EA63CE84F4663B4CB02CE</string>
+				<string>8689EF1FC8E899410CE65C9A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>LogIO-CocoaLumberjack</string>
+			<key>productName</key>
+			<string>LogIO-CocoaLumberjack</string>
+			<key>productReference</key>
+			<string>A8AC7E5C2CA8D17826817317</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>A8AC7F70AA7ABCB3E447A48F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC79EE5A85BA473545DD2E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC7F882424048E6445962A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC7BCA4618F9D13392241E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC7F90683F3003CAF05D96</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.info</string>
+			<key>path</key>
+			<string>LogIO-CocoaLumberjack-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7FB22562F0EBC17ADAB1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC789A2D70AB103EAB865B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8AC7FB336D2BD6A7CF688EB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MainViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8AC7FF34BC4A4974CCCE5E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8AC78133814131C97B50892</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE690F6B7269C214B2502D97</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F635611F53F24A01A29F7A69</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>A8AC73DFA58AA243205646D6</string>
+</dict>
+</plist>

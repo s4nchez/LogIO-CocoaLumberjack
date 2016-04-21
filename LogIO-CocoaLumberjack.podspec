@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "LogIO-CocoaLumberjack"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "A log.io appender for CocoaLumberjack."
   s.description      = <<-DESC
                         A [log.io](http://logio.org/) appender for [CocoaLumberjack](https://github.com/CocoaLumberjack/)
@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
   s.osx.exclude_files = 'Classes/ios'
   
   s.dependency 'CocoaAsyncSocket', '~> 7.4'
-  s.dependency 'CocoaLumberjack', '~> 1.9.2'
+  s.dependency 'CocoaLumberjack', '~> 2.0'
 
 end
